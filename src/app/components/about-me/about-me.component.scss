@@ -1,0 +1,86 @@
+.page {
+
+    &-title {
+        padding-top: 72px;
+        font-size: 72px;
+        text-align: center;
+    }
+    &-picture {
+        height: 150px;
+        margin-top: 24px;
+        position: relative;
+
+        &:hover &--accent{
+            border-radius: 50% 50% 0 0;
+            height: 270px;
+            width: 240px;
+
+            top: -15%;
+        }
+        &:hover &-imageframe{
+            border-radius: 50% 50%;
+            overflow: hidden;       
+        }
+
+        &-imageframe {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            z-index: 2;
+            transform: translateX(-50%);
+            border-radius: 0% 0%;
+
+
+            transition-property: all;
+            transition-duration: 500ms;
+            transition-timing-function: ease-out;
+
+        }
+
+        &-img{
+            display: block;
+            width: 150px;
+            height: auto;
+            margin: 0 auto;
+            
+        }
+        &--accent {
+            position: absolute;
+            top: 15%; 
+            left: 50%;
+            z-index: 0;
+            
+            display: block;
+            content: '';
+            width: 200px;
+            height: 220px;
+            background-color: var(--background-accent);
+            transform: translateX(-50%);
+            border-radius: 0 0 0 0;
+            transition-property: all;
+            transition-duration: 500ms;
+            transition-timing-function: ease-out;
+            // &:hover {
+            //     border-radius: 50% 50% 0 0;
+            //     height: 250px;
+            //     top: -10%;
+            // }
+        }
+
+    }
+
+    &-job-title{
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        margin-top: 8px;
+        font-size: 42px;
+        text-transform: uppercase;
+    }
+    &-portfolio{
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        font-size: 24px;
+    }
+}
