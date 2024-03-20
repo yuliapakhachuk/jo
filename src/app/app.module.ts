@@ -12,7 +12,7 @@ import { AccentBlockComponent } from './components/accent-block/accent-block.com
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
-import { HomePageComponent } from './home-page/home-page.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
 
 @NgModule({
   declarations: [
